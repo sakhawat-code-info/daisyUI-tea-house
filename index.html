@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>daisyUI-tea-house</title>
 
     <!-- daisyUI from CDN  -->
@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <!-- fontawesome LINK  -->
+    <script src="https://kit.fontawesome.com/c04cd73b04.js" crossorigin="anonymous"></script>
     <!-- for customizing tailwind theme  -->
     <script>
         tailwind.config = {
@@ -35,6 +37,87 @@
 </head>
 
 <body class="font-Manrope">
+
+    <!-- header section start  -->
+    <header>
+        <nav class="container mx-auto">
+            <div class="navbar bg-base-100">
+                <!-- navbar start  -->
+                <div class="navbar-start">
+                    <a class="btn btn-ghost text-xl">daisyUI</a>
+                </div>
+                <!-- navbar end  -->
+                <div class="navbar-end">
+
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- hidden menu for phone  -->
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg> -->
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                </div> <!--navbar-end class-->
+
+            </div> <!-- navbar class-->
+        </nav> <!-- navbar container-->
+    </header>
+    <!-- header section end  -->
+
+
+    <main class="container mx-auto">
+        <!--bannar section start-->
+        <section>
+            <div class="hero">
+
+                <div class="hero-content flex-col lg:flex-row-reverse justify-between">
+
+                    <div class="">
+                        <img class="max-w-sm " src="images/banner.png" />
+
+                        <div class="flex items-center justify-center drop-shadow-lg bg-white w-60 -mt-11 p-5">
+                            <div class="rating pr-3">
+                                <input class="mask mask-star-2 bg-orange-400 text-3xl" type="radio" name="rating-2" />
+                            </div>
+                            <div>
+                                <h3 class="font-extrabold text-2xl">5.00</h3>
+                                <p>Trust Pilot Ratings</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <h1 class="text-7xl font-extrabold">
+                            It's good <br>
+                            tea time at The <br>
+                            Tea House</h1>
+                        <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste
+                            Buds.</p>
+                        <button class="btn bg-gradient-to-r from-[#FF8938] from-[#F00] text-white transition">Explore
+                            More</button>
+                    </div>
+
+                </div> <!--flex div-->
+            </div>
+        </section>
+        <!--bannar section end-->
+    </main>
+
 
 </body>
 
